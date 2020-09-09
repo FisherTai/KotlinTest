@@ -5,13 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.fisher.kotlintest.rps.RpsActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity(), View.OnClickListener {
 
     override fun getLayoutView(): Int = R.layout.activity_main
 
-    override fun findView() {
-        findViewById<View>(R.id.btn_open_rps).setOnClickListener(this)
+    override fun handleView() {
+        btn_open_rps.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {

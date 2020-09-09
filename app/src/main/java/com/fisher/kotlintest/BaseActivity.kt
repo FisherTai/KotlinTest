@@ -8,9 +8,10 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(getLayoutView())
+        handleView()
     }
 
     abstract fun getLayoutView():Int
-    abstract fun findView()
+    abstract fun handleView()
 
 }

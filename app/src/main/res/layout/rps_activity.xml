@@ -64,60 +64,54 @@
         app:layout_constraintStart_toStartOf="@+id/radioGroup_rps"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup_rps" />
 
-    <TableLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         android:layout_marginTop="10dp"
-        android:stretchColumns="*"
+        android:layout_marginBottom="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_star">
 
-        <TableRow
+        <TableLayout
+            android:id="@+id/table_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
 
-            <TextView
-                android:id="@+id/tv_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Name" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/tv_winner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Winner" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Name" />
 
-            <TextView
-                android:id="@+id/tv_my_produce"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="My Produce" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Result" />
 
-            <TextView
-                android:id="@+id/tv_pc_produce"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="PC Produce" />
-        </TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="My Produce" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="PC Produce" />
+            </TableRow>
 
-        </TableRow>
+        </TableLayout>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    </ScrollView>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,6 @@
 package com.fisher.kotlintest.kotlin
 
-class FunctionAndPrint {
+class DefaultParameterAndNamedArguments {
 
     private val a: Int = 1  // val為常數，並指定型態為Int
     private val b = 2      //省略型態指定
