@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="紅茶" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="綠茶" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="奶茶" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:autoSizeTextType="none"
+        android:text="選擇甜度"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_drink" />
+
+    <RadioGroup
+        android:id="@+id/rg_sweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <RadioButton
+            android:id="@+id/rg_sweet_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正常" />
+
+        <RadioButton
+            android:id="@+id/rg_sweet_helf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="半糖" />
+
+        <RadioButton
+            android:id="@+id/rg_sweet_none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="無糖" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autoSizeTextType="none"
+        android:text="選擇冰塊"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/rg_sweet"
+        app:layout_constraintStart_toStartOf="@+id/rg_sweet"
+        app:layout_constraintTop_toBottomOf="@+id/rg_sweet" />
+
+    <RadioGroup
+        android:id="@+id/rg_ice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+        <RadioButton
+            android:id="@+id/rg_ice_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正常" />
+
+        <RadioButton
+            android:id="@+id/rg_ice_helf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="少冰" />
+
+        <RadioButton
+            android:id="@+id/rg_ice_none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="去冰" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:autoSizeTextType="none"
+        android:text="選擇飲料"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/rg_drink"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="97dp"
+        android:text="確認"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_ice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

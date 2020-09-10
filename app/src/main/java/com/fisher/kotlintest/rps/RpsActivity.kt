@@ -7,13 +7,14 @@ import android.widget.TextView
 import com.fisher.kotlintest.BaseActivity
 import com.fisher.kotlintest.R
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.rps_activity.*
+import kotlinx.android.synthetic.main.activity_rps.*
 
 class RpsActivity : BaseActivity(), RpsContract.View {
 
+
     private var presenter: RpsContract.Presenter? = null
 
-    override fun getLayoutView(): Int = R.layout.rps_activity
+    override fun getLayoutView(): Int = R.layout.activity_rps
 
 
     override fun handleView() {

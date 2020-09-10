@@ -18,6 +18,8 @@
         </activity>
 
         <activity android:name=".rps.RpsActivity"/>
+        <activity android:name=".order.OrderActivity"/>
+        <activity android:name=".order.OrderCommitActivity"/>
     </application>
 
 </manifest>
